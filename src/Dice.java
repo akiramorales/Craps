@@ -6,29 +6,46 @@
  */
 public class Dice
 {
-
-	private int rollCount;
-	
+	//Fields
+	private int val;
+	//Constructors
 	public Dice()
 	{
-		rollCount = 0;
+	val = 0;
 	}
-	
+	//Methods
 	public int roll()
 	{		
-		rollCount++;
-		
 		return (int)(Math.random()*6+1);
-		
 	}
-	
-	public int numRoll()
+	/**
+	 * Returns the value of the roll
+	 * @return Math.random()*6+1
+	 */
+	/**public String die1Val()
 	{
-		return rollCount;
-	}
+		if(val == 1)
+		{
+			System.out.print("_____\n|    |\n|    |\n|    |\n|    |\n|    |\n_____");
+		}
+		else if(val == 2)
+		{
+			System.out.print(arg0);
+		}
+		else if(val == 3)
+		{
+			System.out.print(arg0);
+		}
+		else if(val == 4)
+		{
+			System.out.print(arg0);
+		}else if(val == 5)
+		{
+			System.out.print(arg0);
+		}else if(val == 6)
+		{
+			System.out.print(arg0);
+		}
+	}**/
 	
-	public void reset()
-	{
-		rollCount = 0;
-	}
 }
